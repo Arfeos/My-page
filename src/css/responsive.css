@@ -40,6 +40,19 @@
   .code-window-caption {
     margin-left: 30px;
   }
+  
+  .projects-grid {
+    gap: 1rem;
+  }
+
+  .project-card-featured {
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  }
+
+  .project-content,
+  .project-card-featured .project-content {
+    padding: 1.25rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -149,6 +162,57 @@
 
   .technology-card > p {
     min-height: 0;
+  }
+
+    .projects {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .project-card-featured {
+    grid-column: auto;
+    display: flex;
+  }
+
+  .project-card-featured .project-visual {
+    min-height: 180px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .project-visual {
+    min-height: 160px;
+  }
+
+  .project-content,
+  .project-card-featured .project-content {
+    padding: 1.25rem;
+  }
+
+  .career {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .career-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .courses {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-container {
