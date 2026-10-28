@@ -31,7 +31,7 @@ const translations = {
     "hero.codeLabel": "Mi perfil",
     "hero.codeCaption": "Diseñando, construyendo y aprendiendo.",
     "hero.scroll": "Descubre más",
-    
+
     "about.eyebrow": "Un poco sobre mí",
     "about.title": "Desarrollo con propósito.",
     "about.intro": "Me gusta entender los problemas, diseñar soluciones y convertirlas en aplicaciones útiles, claras y mantenibles.",
@@ -47,6 +47,17 @@ const translations = {
     "about.learningText": "Cada proyecto es una oportunidad para descubrir nuevas herramientas, reforzar fundamentos y encontrar mejores formas de resolver problemas.",
     "about.interestsLabel": "Áreas de interés",
 
+    "technologies.eyebrow": "Mi stack tecnológico",
+    "technologies.title": "Herramientas para construir.",
+    "technologies.intro": "Tecnologías con las que desarrollo aplicaciones web, construyo APIs y trabajo con datos.",
+    "technologies.frontend": "Frontend",
+    "technologies.frontendDescription": "Interfaces web, estructura y experiencia de usuario.",
+    "technologies.backend": "Backend",
+    "technologies.backendDescription": "Lógica de negocio, servicios y APIs.",
+    "technologies.database": "Bases de datos",
+    "technologies.databaseDescription": "Modelado, consultas y persistencia de información.",
+    "technologies.tools": "Herramientas y despliegue",
+    "technologies.toolsDescription": "Herramientas para desarrollar, gestionar y publicar aplicaciones.",
 
     "footer.brandLabel": "Volver al inicio",
     "footer.socialLabel": "Redes profesionales",
@@ -102,6 +113,19 @@ const translations = {
     "about.learningTitle": "Always learning",
     "about.learningText": "Every project is an opportunity to explore new tools, strengthen my fundamentals and find better ways to solve problems.",
     "about.interestsLabel": "Areas of interest",
+
+
+    "technologies.eyebrow": "My tech stack",
+    "technologies.title": "Tools to build with.",
+    "technologies.intro": "Technologies I use to develop web applications, build APIs and work with data.",
+    "technologies.frontend": "Frontend",
+    "technologies.frontendDescription": "Web interfaces, structure and user experience.",
+    "technologies.backend": "Backend",
+    "technologies.backendDescription": "Business logic, services and APIs.",
+    "technologies.database": "Databases",
+    "technologies.databaseDescription": "Data modeling, queries and persistence.",
+    "technologies.tools": "Tools and deployment",
+    "technologies.toolsDescription": "Tools for developing, managing and deploying applications.",
 
 
     "footer.brandLabel": "Back to home",
