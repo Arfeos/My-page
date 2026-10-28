@@ -165,8 +165,7 @@
   }
 
     .projects {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+padding: 78px 20px;
   }
 
   .projects-grid {
@@ -196,8 +195,7 @@
   }
 
   .career {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+padding: 78px 20px;
   }
 
   .career-grid {
