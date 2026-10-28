@@ -13,14 +13,60 @@
 </head>
 <body>
   <header class="site-header">
-    <!-- Aquí construiremos la navegación -->
+      <div class="header-container">
+
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-name">Ángel Martínez</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="main-navigation"
+        id="main-navigation"
+        aria-label="Navegación principal"
+      >
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a class="nav-contact" href="#contacto">
+          Contacto <span aria-hidden="true">↗</span>
+        </a>
+
+        <button
+          class="language-toggle"
+          type="button"
+          aria-label="Cambiar idioma a inglés"
+          aria-pressed="false"
+        >
+          <span class="language-active">ES</span>
+          <span class="language-separator">/</span>
+          <span>EN</span>
+        </button>
+      </nav>
+
+    </div>
   </header>
   <main id="main-content">
-    <!-- Aquí añadiremos el resto del portfolio -->
+
   </main>
-      <footer class="site-footer">
-    <!-- Aquí irá el pie de página -->
+  <footer class="site-footer">
+
   </footer>
+
+<script type="module" src="src/js/main.js"></script>
 
 </body>
 </html>
