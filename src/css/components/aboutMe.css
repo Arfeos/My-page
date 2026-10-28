@@ -1,0 +1,156 @@
+
+/* ABOUT — Sobre mí */
+
+.about {
+  position: relative;
+  padding: 110px 24px;
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(
+      ellipse at 15% 15%,
+      rgba(167, 139, 250, 0.07),
+      transparent 42%
+    ),
+    var(--bg);
+}
+
+.section-container {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 42px;
+}
+
+.section-eyebrow {
+  margin-bottom: 14px;
+  color: var(--accent-light);
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 18px;
+  color: var(--text);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+
+.section-description {
+  max-width: 620px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-card {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(17, 17, 27, 0.82);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    background var(--transition);
+}
+
+.about-card:hover {
+  border-color: rgba(196, 181, 253, 0.38);
+  background: rgba(21, 20, 34, 0.96);
+  transform: translateY(-3px);
+}
+
+.about-card-main {
+  grid-row: span 2;
+}
+
+.about-card-index {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--accent-light);
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.about-card h3 {
+  margin-bottom: 16px;
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.about-card p {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.about-card p + p {
+  margin-top: 16px;
+}
+
+.about-focus-list {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-focus-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.focus-marker {
+  flex: 0 0 7px;
+  width: 7px;
+  height: 7px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(167, 139, 250, 0.45);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.about-tags span {
+  padding: 8px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent-light);
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .about-card {
+    transition: none;
+  }
+
+  .about-card:hover {
+    transform: none;
+  }
+}

@@ -1,12 +1,13 @@
-@import url(./components/header.css);
-@import url(./components/footer.css);
-@import url(./components/hero.css);
-@import url(./responsive.css);
 
-:root{
-    color-scheme: dark;
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/hero.css");
+@import url("./components/aboutMe.css");
+@import url("./responsive.css");
 
-    
+:root {
+  color-scheme: dark;
+
   --bg: #09090f;
   --surface: #11111b;
   --text: #f4f4f8;
@@ -16,28 +17,41 @@
   --accent-light: #c4b5fd;
   --border: rgba(196, 181, 253, 0.16);
 
-  --font-body: Inter, system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
   --font-code: "JetBrains Mono", Consolas, monospace;
 
   --container: 1180px;
+  --reading-width: 720px;
+  --header-height: 76px;
+
+
   --transition: 180ms ease;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: calc(var(--header-height) + 14px);
 }
 
 body {
   margin: 0;
+  min-width: 320px;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 a {
@@ -45,7 +59,10 @@ a {
   text-decoration: none;
 }
 
-button {
+button,
+input,
+textarea,
+select {
   font: inherit;
 }
 
@@ -57,6 +74,11 @@ a {
 :focus-visible {
   outline: 2px solid var(--accent-light);
   outline-offset: 4px;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--accent-light);
 }
 
 @media (prefers-reduced-motion: reduce) {

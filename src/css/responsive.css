@@ -118,6 +118,42 @@
     bottom: 25px;
     white-space: nowrap;
   }
+
+    .about {
+    padding: 78px 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-card-main {
+    grid-row: auto;
+  }
+
+  .about-card {
+    padding: 24px;
+  }
+
+    .footer-container {
+    width: calc(100% - 32px);
+    padding-top: 28px;
+  }
+
+  .footer-social {
+    gap: 18px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-note {
+    display: block;
+    margin: 5px 0 0;
+  }
 }
 
 @media (max-width: 380px) {
@@ -151,5 +187,4 @@
     display: none;
   }
 }
-
 

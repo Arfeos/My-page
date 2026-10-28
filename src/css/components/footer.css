@@ -1,7 +1,4 @@
 
-/* =========================
-   Footer
-   ========================= */
 
 .site-footer {
   border-top: 1px solid rgba(196, 181, 253, 0.14);
@@ -14,7 +11,6 @@
   padding-top: 36px;
 }
 
-/* Marca personal */
 
 .footer-brand {
   display: inline-flex;
@@ -32,7 +28,6 @@
   font-family: var(--font-code);
 }
 
-/* Enlaces sociales */
 
 .footer-social {
   display: flex;
@@ -54,8 +49,6 @@
 .footer-social a span {
   color: var(--accent);
 }
-
-/* Franja inferior */
 
 .footer-bottom {
   display: flex;
@@ -95,26 +88,4 @@
   color: var(--accent);
 }
 
-/* Adaptación a móvil */
 
-@media (max-width: 600px) {
-  .footer-container {
-    width: calc(100% - 32px);
-    padding-top: 28px;
-  }
-
-  .footer-social {
-    gap: 18px;
-  }
-
-  .footer-bottom {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .footer-note {
-    display: block;
-    margin: 5px 0 0;
-  }
-}

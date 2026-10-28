@@ -31,11 +31,28 @@ const translations = {
     "hero.codeLabel": "Mi perfil",
     "hero.codeCaption": "Diseñando, construyendo y aprendiendo.",
     "hero.scroll": "Descubre más",
+    
+    "about.eyebrow": "Un poco sobre mí",
+    "about.title": "Desarrollo con propósito.",
+    "about.intro": "Me gusta entender los problemas, diseñar soluciones y convertirlas en aplicaciones útiles, claras y mantenibles.",
+    "about.profileTitle": "Más que escribir código",
+    "about.profileText": "Disfruto trabajando en distintas partes de una aplicación web: desde construir interfaces hasta desarrollar APIs y organizar bases de datos. Me interesa crear soluciones coherentes, cuidar los detalles y entender cómo encaja cada pieza.",
+    "about.approachText": "Mi forma de aprender consiste en construir proyectos, enfrentarme a problemas reales y mejorar el código paso a paso.",
+    "about.focusTitle": "Mi enfoque",
+    "about.focus1": "Desarrollo frontend y backend",
+    "about.focus2": "Diseño y consumo de APIs REST",
+    "about.focus3": "Modelado y gestión de bases de datos",
+    "about.focus4": "Código organizado y mantenible",
+    "about.learningTitle": "Siempre aprendiendo",
+    "about.learningText": "Cada proyecto es una oportunidad para descubrir nuevas herramientas, reforzar fundamentos y encontrar mejores formas de resolver problemas.",
+    "about.interestsLabel": "Áreas de interés",
+
 
     "footer.brandLabel": "Volver al inicio",
     "footer.socialLabel": "Redes profesionales",
     "footer.note": "Hecho con intención.",
-    "footer.backToTop": "Volver arriba"
+    "footer.backToTop": "Volver arriba",
+
   },
 
   en: {
@@ -69,6 +86,23 @@ const translations = {
     "hero.codeLabel": "My profile",
     "hero.codeCaption": "Designing, building and learning.",
     "hero.scroll": "Discover more",
+
+
+    "about.eyebrow": "A little about me",
+    "about.title": "Development with purpose.",
+    "about.intro": "I enjoy understanding problems, designing solutions and turning them into useful, clear and maintainable applications.",
+    "about.profileTitle": "More than writing code",
+    "about.profileText": "I enjoy working on different parts of a web application: from building interfaces to developing APIs and organizing databases. I care about creating coherent solutions, paying attention to details and understanding how each piece fits together.",
+    "about.approachText": "I learn by building projects, tackling real-world problems and improving my code step by step.",
+    "about.focusTitle": "My approach",
+    "about.focus1": "Frontend and backend development",
+    "about.focus2": "REST API design and integration",
+    "about.focus3": "Database modeling and management",
+    "about.focus4": "Clean and maintainable code",
+    "about.learningTitle": "Always learning",
+    "about.learningText": "Every project is an opportunity to explore new tools, strengthen my fundamentals and find better ways to solve problems.",
+    "about.interestsLabel": "Areas of interest",
+
 
     "footer.brandLabel": "Back to home",
     "footer.socialLabel": "Professional networks",
