@@ -1,5 +1,6 @@
 @import url(./components/header.css);
 @import url(./components/footer.css);
+@import url(./components/hero.css);
 @import url(./responsive.css);
 
 :root{
@@ -58,3 +59,12 @@ a {
   outline-offset: 4px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

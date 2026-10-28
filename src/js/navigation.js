@@ -1,17 +1,15 @@
 
+import { setLanguage, getLanguage, translate } from "./language.js";
+
 export function initNavigation() {
   const menuButton = document.querySelector(".menu-toggle");
   const navigation = document.querySelector("#main-navigation");
   const languageButton = document.querySelector(".language-toggle");
-  const yearElement = document.querySelector("#current-year");
 
-  if (!yearElement) return;
-
-  yearElement.textContent = new Date().getFullYear();
   if (menuButton && navigation) {
     const closeMenu = () => {
       menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Abrir menú");
+      menuButton.setAttribute("aria-label", translate("nav.openMenu"));
       navigation.classList.remove("is-open");
     };
 
@@ -19,13 +17,15 @@ export function initNavigation() {
       const isOpen =
         menuButton.getAttribute("aria-expanded") === "true";
 
-      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      const nextState = !isOpen;
+
+      menuButton.setAttribute("aria-expanded", String(nextState));
       menuButton.setAttribute(
         "aria-label",
-        isOpen ? "Abrir menú" : "Cerrar menú"
+        translate(nextState ? "nav.closeMenu" : "nav.openMenu")
       );
 
-      navigation.classList.toggle("is-open", !isOpen);
+      navigation.classList.toggle("is-open", nextState);
     });
 
     navigation.querySelectorAll("a").forEach((link) => {
@@ -35,6 +35,7 @@ export function initNavigation() {
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         closeMenu();
+        menuButton.focus();
       }
     });
 
@@ -46,34 +47,9 @@ export function initNavigation() {
   }
 
   if (languageButton) {
-    const languages = languageButton.querySelectorAll(
-      "span:not(.language-separator)"
-    );
-
-    let currentLanguage = "es";
-
     languageButton.addEventListener("click", () => {
-      currentLanguage = currentLanguage === "es" ? "en" : "es";
-
-      if (languages.length >= 2) {
-        languages[0].textContent = currentLanguage.toUpperCase();
-        languages[1].textContent =
-          currentLanguage === "es" ? "EN" : "ES";
-      }
-
-      languageButton.setAttribute(
-        "aria-label",
-        currentLanguage === "es"
-          ? "Cambiar idioma a inglés"
-          : "Switch language to Spanish"
-      );
-
-      languageButton.setAttribute(
-        "aria-pressed",
-        String(currentLanguage === "en")
-      );
-
-      document.documentElement.lang = currentLanguage;
+      const nextLanguage = getLanguage() === "es" ? "en" : "es";
+      setLanguage(nextLanguage);
     });
   }
 }

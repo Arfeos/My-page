@@ -1,115 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="theme-color" content="#09090f">
-  <meta name="description" content="Portfolio de Ángel Martínez Castellanos, desarrolladora full-stack. Proyectos, tecnologías y contacto.">
-    <title>Ángel Martínez Castellanos — Portfolio Full-Stack</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09090f" />
+    <meta name="description"
+        content="Portfolio de Ángel Martínez Castellanos, desarrolladora full-stack. Proyectos, tecnologías y contacto."
+        data-i18n-content="meta.description" />
+
+    <title data-i18n="meta.title">
+        Ángel Martínez Castellanos — Portfolio Full-Stack
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/styles.css" />
 </head>
+
 <body>
-  <header class="site-header">
-      <div class="header-container">
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
+                <span class="brand-name">Ángel Martínez</span>
+            </a>
 
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
-        <span class="brand-name">Ángel Martínez</span>
-      </a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="main-navigation" data-i18n-aria-label="nav.openMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Abrir menú"
-        aria-expanded="false"
-        aria-controls="main-navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+            <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal"
+                data-i18n-aria-label="nav.mainLabel">
+                <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+                <a href="#tecnologias" data-i18n="nav.technologies">Tecnologías</a>
+                <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+                <a href="#formacion" data-i18n="nav.education">Formación</a>
 
-      <nav
-        class="main-navigation"
-        id="main-navigation"
-        aria-label="Navegación principal"
-      >
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#tecnologias">Tecnologías</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#formacion">Formación</a>
-        <a class="nav-contact" href="#contacto">
-          Contacto <span aria-hidden="true">↗</span>
-        </a>
+                <a class="nav-contact" href="#contacto">
+                    <span data-i18n="nav.contact">Contacto</span>
+                    <span aria-hidden="true">↗</span>
+                </a>
 
-        <button
-          class="language-toggle"
-          type="button"
-          aria-label="Cambiar idioma a inglés"
-          aria-pressed="false"
-        >
-          <span class="language-active">ES</span>
-          <span class="language-separator">/</span>
-          <span>EN</span>
-        </button>
-      </nav>
+                <button class="language-toggle" type="button" aria-label="Cambiar idioma a inglés"
+                    data-i18n-aria-label="language.switchToEnglish" aria-pressed="false">
+                    <span class="language-active">ES</span>
+                    <span class="language-separator" aria-hidden="true">/</span>
+                    <span>EN</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">
+                        <span class="status-indicator" aria-hidden="true"></span>
+                        <span data-i18n="hero.status">Disponible para nuevos proyectos</span>
+                    </p>
 
-    </div>
-  </header>
-  <main id="main-content">
+                    <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy</p>
 
-  </main>
+                    <h1 class="hero-title" id="hero-title">
+                        Ángel Martínez<span class="hero-title-accent">.</span>
+                    </h1>
 
-<footer class="site-footer" id="contacto">
-  <div class="footer-container">
+                    <h2 class="hero-role" data-i18n="hero.role">
+                        Full Stack Developer
+                    </h2>
 
-    <a class="footer-brand" href="#inicio" aria-label="Volver al inicio">
-      <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
-      <span>Ángel Martínez</span>
-    </a>
+                    <p class="hero-description" data-i18n="hero.description">
+                        Desarrollo aplicaciones web combinando interfaces intuitivas, APIs
+                        robustas y bases de datos bien estructuradas. Me gusta transformar
+                        ideas en soluciones funcionales y mantenibles.
+                    </p>
 
-    <nav class="footer-social" aria-label="Redes profesionales">
-      <a
-        href="https://github.com/Arfeos"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub <span aria-hidden="true">↗</span>
-      </a>
+                    <div class="hero-actions">
+                        <a class="hero-button hero-button-primary" href="#proyectos" data-i18n="hero.projectsButton">
+                            Explorar proyectos
+                            <span aria-hidden="true">↗</span>
+                        </a>
 
-      <a
-        href="https://www.linkedin.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn <span aria-hidden="true">↗</span>
-      </a>
+                        <a class="hero-button hero-button-secondary" href="#contacto" data-i18n="hero.contactButton">
+                            Contactar
+                        </a>
+                    </div>
 
-      <a href="mailto:TU_CORREO">
-        Email <span aria-hidden="true">↗</span>
-      </a>
-    </nav>
+                    <ul class="hero-technologies" aria-label="Tecnologías principales">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>FastAPI</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
 
-    <div class="footer-bottom">
-      <p>
-        © <span id="current-year"></span>
-        Ángel Martínez Castellanos.
-        <span class="footer-note">Hecho con intención.</span>
-      </p>
+                <!-- Panel visual de código -->
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-window-header">
+                            <div class="window-controls" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
 
-      <a class="back-to-top" href="#inicio">
-        Volver arriba <span aria-hidden="true">↑</span>
-      </a>
-    </div>
+                            <p class="code-window-filename">
+                                <span aria-hidden="true">⌘</span>
+                                developer.ts
+                            </p>
 
-  </div>
-</footer>
+                            <span class="code-window-status" data-i18n="hero.codeLabel">
+                                Mi perfil
+                            </span>
+                        </div>
 
+                        <div class="code-window-body">
+                            <div class="code-line">
+                                <span class="line-number">01</span>
+                                <code><span class="code-purple">const</span> developer = {</code>
+                            </div>
 
-<script type="module" src="src/js/main.js"></script>
+                            <div class="code-line">
+                                <span class="line-number">02</span>
+                                <code>
+                    &nbsp;&nbsp;name:
+                    <span class="code-green">"Ángel Martínez"</span>,
+                  </code>
+                            </div>
 
+                            <div class="code-line">
+                                <span class="line-number">03</span>
+                                <code>
+                    &nbsp;&nbsp;role:
+                    <span class="code-green">"Full Stack Developer"</span>,
+                  </code>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">04</span>
+                                <code>
+                    &nbsp;&nbsp;frontend:
+                    <span class="code-blue"
+                      >["HTML", "CSS", "JS","Angular","TS"]</span
+                    >,
+                  </code>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">05</span>
+                                <code>
+                    &nbsp;&nbsp;backend:
+                    <span class="code-blue"
+                      >["Python", "FastAPI","Java","C#", "PHP"]</span
+                    >,
+                  </code>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">06</span>
+                                <code>
+                    &nbsp;&nbsp;database:
+                    <span class="code-green">["SQL"]</span>,
+                  </code>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">07</span>
+                                <code>
+                    &nbsp;&nbsp;passion:
+                    <span class="code-green">"Building things"</span>
+                  </code>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">08</span>
+                                <code>};</code>
+                            </div>
+
+                            <p class="code-window-caption" data-i18n="hero.codeCaption">
+                                Diseñando, construyendo y aprendiendo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-decoration hero-decoration-top" aria-hidden="true">
+                        <span>01</span>
+                        <span>/</span>
+                        <span>BUILD</span>
+                    </div>
+
+                    <div class="hero-decoration hero-decoration-bottom" aria-hidden="true">
+                        <span class="decoration-dot"></span>
+                        <span>FULL STACK · WEB DEVELOPMENT</span>
+                    </div>
+                </div>
+            </div>
+
+            <a class="hero-scroll" href="#sobre-mi">
+                <span data-i18n="hero.scroll">Descubre más</span>
+                <span aria-hidden="true">↓</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contacto">
+        <div class="footer-container">
+            <a class="footer-brand" href="#inicio" aria-label="Volver al inicio"
+                data-i18n-aria-label="footer.brandLabel">
+                <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
+                <span>Ángel Martínez</span>
+            </a>
+
+            <nav class="footer-social" aria-label="Redes profesionales" data-i18n-aria-label="footer.socialLabel">
+                <a href="https://github.com/Arfeos" target="_blank" rel="noopener noreferrer">
+                    GitHub <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/angel-martinez-castellanos-0659b7240/" target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn <span aria-hidden="true">↗</span>
+                </a>
+            </nav>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="current-year"></span>
+                    Ángel Martínez Castellanos.
+                    <span class="footer-note" data-i18n="footer.note">
+                        Hecho con intención.
+                    </span>
+                </p>
+
+                <a class="back-to-top" href="#inicio">
+                    <span data-i18n="footer.backToTop">Volver arriba</span>
+                    <span aria-hidden="true">↑</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/js/main.js"></script>
 </body>
+
 </html>
