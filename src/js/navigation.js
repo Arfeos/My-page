@@ -3,7 +3,11 @@ export function initNavigation() {
   const menuButton = document.querySelector(".menu-toggle");
   const navigation = document.querySelector("#main-navigation");
   const languageButton = document.querySelector(".language-toggle");
+  const yearElement = document.querySelector("#current-year");
 
+  if (!yearElement) return;
+
+  yearElement.textContent = new Date().getFullYear();
   if (menuButton && navigation) {
     const closeMenu = () => {
       menuButton.setAttribute("aria-expanded", "false");

@@ -1,0 +1,120 @@
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+  border-top: 1px solid rgba(196, 181, 253, 0.14);
+  background: #08080d;
+}
+
+.footer-container {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+  padding-top: 36px;
+}
+
+/* Marca personal */
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.footer-brand .brand-symbol {
+  color: var(--accent-light);
+  font-family: var(--font-code);
+}
+
+/* Enlaces sociales */
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.footer-social a {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  transition: color var(--transition);
+}
+
+.footer-social a:hover {
+  color: var(--accent-light);
+}
+
+.footer-social a span {
+  color: var(--accent);
+}
+
+/* Franja inferior */
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-top: 32px;
+  padding-block: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--text-subtle);
+  font-size: 0.75rem;
+}
+
+.footer-note {
+  margin-left: 6px;
+}
+
+.back-to-top {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  transition: color var(--transition);
+}
+
+.back-to-top:hover {
+  color: var(--accent-light);
+}
+
+.back-to-top span {
+  margin-left: 4px;
+  color: var(--accent);
+}
+
+/* Adaptación a móvil */
+
+@media (max-width: 600px) {
+  .footer-container {
+    width: calc(100% - 32px);
+    padding-top: 28px;
+  }
+
+  .footer-social {
+    gap: 18px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-note {
+    display: block;
+    margin: 5px 0 0;
+  }
+}
